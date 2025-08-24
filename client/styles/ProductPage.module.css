@@ -1,0 +1,109 @@
+.backLink {
+  color: var(--primary); 
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: transform 0.2s;
+  font-weight: 500;
+}
+
+.backLink:hover {
+  transform: translateX(-4px);
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 50px; 
+  margin-top: 20px;
+}
+
+
+.galleryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+.mainImageContainer {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  background-color: #fff; 
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center; 
+  gap: 15px;
+}
+
+.thumbnail {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.thumbnail:hover {
+  border-color: var(--primary);
+}
+
+.thumbnail.active {
+  border-color: var(--primary);
+  box-shadow: 0 0 10px var(--primary);
+}
+
+
+
+.infoColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.productName {
+  font-size: 2.8em;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  color: var(--on-surface);
+}
+
+.description {
+  font-size: 1.1em;
+  line-height: 1.7; 
+  color: var(--on-background);
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 30px;
+}
+
+.addButton {
+  padding: 18px 25px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #121212; 
+  background-color: var(--primary);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  text-transform: uppercase;
+}
+
+.addButton:hover {
+  background-color: var(--secondary);
+  transform: scale(1.03); 
+}

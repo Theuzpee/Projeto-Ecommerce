@@ -1,6 +1,3 @@
-// server/src/controllers/productController.js
-
-// Importamos nosso cliente Supabase configurado
 const supabase = require('../config/supabaseClient');
 
 // Função para buscar todos os produtos
@@ -8,8 +5,8 @@ const getAllProducts = async (req, res) => {
   try {
     // Usa o cliente Supabase para fazer a query
     const { data, error } = await supabase
-      .from('produtos') // O nome da sua tabela
-      .select('*');    // Seleciona todas as colunas
+      .from('produtos') 
+      .select('*');    
 
     if (error) throw error; // Se houver um erro na query, lança a exceção
 

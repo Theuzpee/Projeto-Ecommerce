@@ -1,4 +1,3 @@
-// server/src/config/supabaseClient.js
 const { createClient } = require('@supabase/supabase-js');
 
 // Carrega as variáveis de ambiente

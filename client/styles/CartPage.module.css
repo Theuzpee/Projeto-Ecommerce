@@ -1,0 +1,126 @@
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.emptyCart {
+  text-align: center;
+  padding: 50px;
+  color: var(--on-background);
+}
+
+.emptyCart a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.cartGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cartItem {
+  display: flex;
+  gap: 20px;
+  background-color: var(--surface);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.itemImage {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.itemInfo {
+  flex-grow: 1;
+}
+
+.itemName {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.itemPrice {
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+.summary {
+  background-color: var(--surface);
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  position: sticky; 
+  top: 120px; 
+}
+
+.summaryTitle {
+  font-size: 1.5rem;
+  margin: 0 0 20px 0;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.summaryTotal {
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-top: 1px solid var(--border);
+  padding-top: 15px;
+}
+
+.checkoutButton {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #121212;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.checkoutButton:hover {
+  background-color: var(--secondary);
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  color: #aaa; 
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 5px 0; 
+  margin-top: 10px;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.removeButton:hover {
+  color: #ff4d4d; 
+}
