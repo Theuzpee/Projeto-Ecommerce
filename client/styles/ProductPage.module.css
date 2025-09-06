@@ -107,3 +107,33 @@
   background-color: var(--secondary);
   transform: scale(1.03); 
 }
+
+.addButton.added {
+  background-color: #28a745; /* Verde sucesso */
+  cursor: not-allowed;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+
+  .gridContainer {
+    grid-template-columns: 1fr;
+    gap: 30px; 
+  }
+
+  .productName {
+    font-size: 2rem; 
+  }
+
+  .price {
+    font-size: 1.8rem; 
+  }
+
+  .backLink {
+    margin-bottom: 10px;
+  }
+}
+
+

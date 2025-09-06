@@ -37,6 +37,14 @@
   padding: 15px;
   border-radius: 8px;
   border: 1px solid var(--border);
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.cartItem.removing {
+  opacity: 0;
+  transform: translateX(-50px);
 }
 
 .itemImage {
@@ -124,3 +132,67 @@
 .removeButton:hover {
   color: #ff4d4d; 
 }
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.quantityControls button {
+  background-color: var(--surface-bright);
+  border: 1px solid var(--border);
+  color: var(--on-surface);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.quantityControls button:hover {
+  background-color: var(--border);
+}
+
+.quantityControls span {
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .cartGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .summary {
+    position: static; 
+    width: 100%;
+  }
+
+  .cartItem {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .itemImage {
+    width: 100%;
+    max-width: 200px; 
+    height: 250px;
+    margin-bottom: 15px;
+  }
+}
+
+

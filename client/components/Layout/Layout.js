@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Header />
-      <main style={{ flex: 1, width: '100%' }}>
+      <main className="fade-in-content" style={{ padding: '20px', minHeight: '80vh' }}>
         {children}
       </main>
       <Footer />
